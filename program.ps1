@@ -32,12 +32,12 @@ function GenerateForm {
     #region Events
     $btn_OkAllgemein_OnClick= 
     {
-        Exit
+        $form1.Close()
     }
 
     $btn_OkEreignisse_OnClick= 
     {
-        Exit
+        $form1.Close()
     }
 
     $btn_changeName_OnClick= 
@@ -338,7 +338,7 @@ function GenerateForm {
 
     #Save the initial state of the form
     $InitialFormWindowState = $form1.WindowState
-    $lbl_deviceName.Text = "USB_LUCA"
+    #$lbl_deviceName.Text = "USB_LUCA"
     #Init the OnLoad event to correct the initial state of the form
     $form1.add_Load($OnLoadForm_StateCorrection)
     #Show the Form
